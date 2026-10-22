@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti | Sign Up</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <section class="auth-box">
+             <a href="bugatti.html" class="back-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg></a>
+            <a href="bugatti.html" class="logo">BUGATTI</a>
+
+            <h1>Create Account</h1>
+            <p class="subtitle">Join the world of Bugatti.</p>
+
+            <form action="#" method="post">
+
+                <div class="input-group">
+                    <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" pattern="[a-zA-Z]{1,30}"
+                                title="Name should contain only letters and spaces" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address*</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number*</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter 10-digit number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="country">Country*</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="india">India</option>
+                        <option value="france">France</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="germany">Germany</option>
+                        <option value="italy">Italy</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password*</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password*</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Confirm your password"
+                        required>
+                </div>
+
+                <label class="terms">
+                    <input type="checkbox" required>
+                    <span>I agree to the terms and conditions.</span>
+                </label>
+
+                <button type="submit" class="auth-button" formaction="bugatti.html">
+                    CREATE ACCOUNT
+                </button>
+
+            </form>
+
+            <p class="switch-page">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
